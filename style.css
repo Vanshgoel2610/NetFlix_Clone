@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Martel Sans', sans-serif;
+    color: white;
+
+    ::selection {
+        user-select: none;                        /* Here I have make the selection none */
+    }
+}
+title {
+    color: rgb(233, 81, 81);
+}
+body {
+    background-color: black;
+}
+.main {
+    background-image: url("assets/bg.jpg");
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 644px;
+    position: relative;
+}
+.main .box {
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+nav {
+    max-width: 80vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+nav img {
+    position: relative;
+    z-index: 10;
+}
+nav button {
+    position: relative;
+    z-index: 10;
+}
+nav div .btn {
+    width:110px;
+    margin-right:20px;
+    font-size:1em;
+}
+.hero {
+    height: 100%;
+    position: relative;                            /* using position relative here so that the text pop out to the screen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Martel Sans', sans-serif;
+    gap: 14px;
+    padding: 0 23px;
+}
+.hero>:first-child {                                 /* I am talking about the immediate first child */
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+}
+.hero>:nth-child(2) {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+.hero>:nth-child(3) {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+.hero input {
+    line-height: 1.5;
+    font-size: 1rem;
+}
+.btn {
+    padding: 3px 8px;
+    background-color: rgba(80, 78, 78, 0.379);
+    font-weight: bold;
+    cursor: pointer;
+    padding: 3px 8px;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+/* height:calc(100%-63px) */
+.btn-red {
+    font-weight: 400;
+    font-size: 16px;
+    background-color: red;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+.btn-red-sm {
+    background-color: red;
+}
+.hero-buttons {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.hero-buttons input {
+    line-height:27px;
+}
+.main input[type=text] {
+    padding: 7px 101px 10px 17px;
+    font-weight: 900;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.3);
+}
+.seperation {
+    height: 0.5rem;
+    background-color: rgb(35, 35, 35);
+    position: relative;
+    z-index: 20;
+}
+.first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+}
+.secImg {
+    position: relative;
+}
+.secImg img {
+    width: 30vw;
+    position: relative;
+    z-index: 10;
+}
+.secImg video {
+    position: absolute;
+    top: 51px;
+    right: 0;
+}
+.first .secImg video {
+    width:83%;
+}
+.third .secImg video {
+    position: absolute;
+    width: 62%;
+    right: 19%;
+    height:86%;
+    top:-40px;
+}
+.first>div :nth-child(1) {
+    font-weight: 900;
+    font-size: 48px;
+}
+.first>div :nth-child(1)::after {
+    content:"\a";                                      /* Here I am inserting a newLine */
+    white-space:pre;
+}
+.first>div :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+}
+.second {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.forth {
+    flex-direction: row-reverse;
+    max-width: 75vw;
+}
+.faq>div:first-child {
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+}
+.faq {
+    padding: 34px;
+}
+.faqbox {
+    display: flex;
+    padding: 24px;
+    max-width: 75vw;
+    background-color: rgb(50, 48, 48);
+    margin: 27px auto;
+    justify-content: space-between;
+    font-size: 24px;
+    cursor: pointer;
+    transition:all 0.7s ease-out;             /* Here the function of "all" property is to apply transition to all properties in hover */
+}
+/* .faqbox svg {
+    filter:invert(1);                 It is can also be used for making the color white of svg 
+} */
+.faqbox:hover {
+    background-color: gray;
+}
+.below {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+}
+.below>div:first-child {
+    font-size:1.25rem;
+}
+.below .inside_text {
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    gap:7px;
+}
+.below .inside_text input {
+    line-height:43px;
+    border-radius:5px;
+    width:300px;
+    background-color:rgba(80, 78, 78, 0.148);
+}
+.below .inside_text input[type=text] {
+    padding-left:10px;
+    color:white;
+    position:relative;
+    z-index:50;
+}
+.below .inside_text .below_btn {
+    width:170px;
+    border-radius:5px;
+    background-color:red;
+    font-weight:400;
+    font-size:20px;
+    cursor:pointer;
+}
+footer {
+    width:70vw;
+    margin:50px auto;
+}
+footer>div:first-child {
+    margin-bottom:30px;
+    font-family:sans-serif;
+    color:rgb(155, 141, 141);
+}
+number {
+    cursor:pointer;
+    color:rgb(155, 141, 141);
+    text-decoration:underline;
+}
+.list ul {
+    cursor:pointer;
+    list-style-type:none;
+    font-family:sans-serif;
+}
+.list ul li {
+    text-decoration:underline;
+    color:rgb(155, 141, 141);
+}
+.grid {
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+}
+@media screen and (max-width:600px) {
+    nav div {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .first {
+        flex-wrap:wrap;
+    }
+    .secImg img {
+        width:305px;
+    }
+    .secImg video {
+        width:305px;
+    }
+    .hero> :nth-child(1) {
+        font-size:32px;
+    }
+    .hero> :nth-child(2) {
+        font-size:18px;
+    }
+    .hero> :nth-child(3) {
+        font-size:18px;
+    }
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+    .faq>div:first-child {
+        font-size:32px;
+        text-align:center;
+    }
+    footer {
+        max-width:90vw;
+    }
+    footer .grid {
+        align-items:center;
+        justify-content: center;
+    }
+    .grid {
+        grid-template-columns:1fr 1fr;
+        gap:40px;
+    }
+}
