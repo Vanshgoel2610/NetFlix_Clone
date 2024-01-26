@@ -49,6 +49,11 @@ nav button {
     z-index: 10;
 }
 nav div .btn {
+    /* height:fit-content; */
+    height:2.5em;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
     width:110px;
     margin-right:20px;
     font-size:1em;
